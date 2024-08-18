@@ -1,0 +1,73 @@
+img {
+    height: 300px;
+    width: 300px;
+}
+
+body {
+    justify-content: center;
+    width: 5;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item {
+    border-radius: 25%;
+    padding-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemDetails {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addtocart {
+    height: 20px;
+    background-color: aqua;
+    width: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-inline-start: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 50%;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+}
+
+.imgClass {
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+}
+
+.btnClass {
+    position: absolute;
+}
+
+/* .btn {
+    border-radius: 50%;
+    height: 20px;
+    background-color: red;
+} */

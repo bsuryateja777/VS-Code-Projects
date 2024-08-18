@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <center>
+        <h1>For more input types <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">click here</a></h1>
+        <main>
+            <form action="http://www.google.com" method="get">
+                
+                <label for="user">Enter your username:</label>
+                <input type="text" id="user">
+                <br>
+
+                <label for="pass">Enter your password:</label>
+                <input type="text" id="pass">
+                <br>
+
+                <label for="color">Enter a color:</label>
+                <input type="color" id="color">
+                <br>
+
+                <label for="tele">Enter your Number:</label>
+                <input type="tel" id="tele">
+                <br>
+
+                <input type="checkbox" id="checkagree" checked>
+                <label for="checkagree">I agree to Terms and Conditions</label>
+                <br>
+
+                <input type="checkbox" id="checknotagree">
+                <label for="checknotagree">I don't agree to Terms and Conditions</label>
+                <br>
+                
+                <p>
+                    Select your Gender: <label for="male">Male</label>
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label for="female">Female</label>
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="other">Others</label>
+                                        <input type="radio" name="gender" id="other" value="others">
+                </p>
+                <br>
+                <br>
+
+                <label for="country">Select your country: </label>
+                <select name="country" id="country">
+                    <option value="none">....</option>
+                    <option value="India">India</option>
+                    <option value="America">USA</option>
+                    <option value="London">UK</option>
+                    <option value="Aus">Australia</option>
+                </select>
+                <br><br>
+
+                <input type="range" name="volume" id="vol" min="1" max="100" value="25" step="10">
+                <label for="vol">Volume</label>
+                <br>
+                <br>
+                <p>
+                    <label for="suggestions">Comment your suggestions below</label>
+                    <textarea id="suggestions" name="suggestion" rows="10" cols="50"></textarea>
+                </p>
+
+
+                <br><p></p>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+            <p></p>
+            <p></p>
+
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button>Search in Google</button>
+            </form>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name="search_query">
+                <button>Search in Youtube</button>
+            </form>
+        </main>
+    </center>
+</body>
+</html>

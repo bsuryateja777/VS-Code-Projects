@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+<body>
+    <main>
+        <h1>Race Registration...!</h1>
+        <form action="/chicks">
+            <p>
+                <div>
+                    <label for="first">First Name </label>
+                        <input id="first" type="text" name="firstname" placeholder="enter firstname">
+                    
+                        <label for="last">Last Name </label>
+                        <input id="last" type="text" name="lastname" placeholder="enter lastname">
+                </div>
+            </p>
+
+            <div>
+                <h3>Select type of Race: </h3>
+                    <p>
+                        
+                        <input type="radio" name="type_race" id="fun_type" value="fun">
+                        <label for="fun_type">Fun Race</label>
+                        <br>
+
+                        <input type="radio" name="type_race" id="half_race" value="half">
+                        <label for="Half_race">Half Race</label>
+                        <br>
+
+                        <input type="radio" name="type_race" id="full_race" value="full">
+                        <label for="full_race">Full Race</label>
+                    </p>
+                
+            </div>
+
+            <div>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="pass">Password</label>
+                    <input type="password" name="password" id="pass">
+                </p>
+            </div>
+
+            <div>
+                <label for="age">Select your age group: </label>
+                <select name="age" id="age" >
+                    <option value="none">Select your age</option>
+                    <option value="<18">Below 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value=">30">Above 30</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    
+</body>
+</html>
