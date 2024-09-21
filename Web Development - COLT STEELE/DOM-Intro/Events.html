@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Events</h1>
+
+    <button id="btn1"> Click Me! </button>
+    <button id="btn2"> Click Me! </button>
+
+
+
+    <script>
+        const btn1 = document.querySelector('#btn1');
+
+        btn1.onclick = function () {
+            console.log("you clicked me!");
+        }
+
+        function scream() {
+            console.log("AAAAAAAAAAhhhhhhhhh")
+        }
+
+        btn1.onmouseenter = scream;
+
+        //event Listeners
+        const btn2 = document.querySelector('#btn2');
+        btn2.addEventListener('dblclick', function () {
+            alert("clicked!");
+        })
+    </script>
+
+</body>
+
+</html>

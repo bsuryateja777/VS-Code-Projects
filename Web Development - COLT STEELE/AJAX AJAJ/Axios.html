@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Jokes App</title>
+</head>
+
+<body>
+
+    <h1>HEYYY!!!! HOW U DOING BUDDY...</h1>
+    <ul id="jokes"></ul>
+    <button>Click Me</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const button = document.querySelector('button');
+        const jokes = document.querySelector('#jokes');
+
+        const getDadJoke = async () => {
+            try {
+                const config = { headers: { Accept: 'application/json' } };
+                const res = await axios.get('https://icanhazdadjoke.com/', config);
+                return res.data.joke;
+            } catch (e) {
+                console.error("Error fetching joke:", e);
+                return `No jokes available at the moment!`;
+            }
+        }
+
+        const addNewJoke = async () => {
+            const joke = await getDadJoke();
+            const newLI = document.createElement('LI');
+            newLI.textContent = joke;
+            jokes.append(newLI);
+        }
+
+        button.addEventListener('click', addNewJoke);
+    </script>
+</body>
+
+</html>

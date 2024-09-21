@@ -1,0 +1,72 @@
+for (let i = 0; i <= 20; i += 3){
+    console.log(i);
+}
+
+
+console.log();
+
+console.log("lopping through 2d arrays:");
+console.log();
+
+const animals = ['lions', 'tigers', 'bears'];
+
+for (let i = 0; i < animals.length; i++){
+    console.log(i, animals[i]);
+}
+
+
+console.log();
+
+console.log("lopping through 3d arrays:");
+console.log();
+
+const threeD = [
+    ['5c1', 'sridhar', 'average'],
+    ['5c8', 'surya', 'average'],
+    ['5e5', 'nithin', 'topper'],
+    ['5e9', 'koushik', 'topper']
+
+];
+
+for (let i = 0; i < threeD.length; i++){
+    for (let j = 0; j < threeD[0].length; j++){
+
+        const temp = threeD[i];
+        
+        const String = temp.join(', ') + '.';
+        
+        console.log(String);
+    }
+}
+
+
+console.log();
+
+console.log("Fibonacci series:");
+console.log();
+
+let i = 0;
+let j = 1;
+
+console.log(i);
+console.log(j);
+let c = 2;
+
+
+while (c <= 10) {
+
+    let k = i + j;
+
+    console.log(k);
+    i = j;
+    j = k;
+    c++;
+}
+
+console.log();
+
+
+
+
+
+

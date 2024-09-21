@@ -6,3 +6,9 @@ if (age > 18) {
 else {
     console.log("sorry, you are a minor")
 }
+
+
+// key -> pairs are called objects
+// declared as let name= {key: value.....}
+// eg:   const person = {firstName : "mick", lastName : "jagger"}
+// acessed as person["firstName"]

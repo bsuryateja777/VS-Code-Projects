@@ -1,0 +1,42 @@
+let subs = ['surya', 'nithin', 'koushik', 'sridhar', 'sambu'];
+
+for (let sub of subs) {
+    console.log(sub);
+}
+
+//iterating over objects
+
+let marks = {
+    surya : 90,
+    nithin: 99,
+    koushik: 98,
+    sridhar: 97,
+    sambudu : 96
+}
+console.log("/n");
+console.log("/n");
+for (let student in marks) {
+    console.log(`${student} : ${marks[student]}`);
+}
+
+//printing only keys
+console.log(`keys in marks object are: ${Object.keys(marks)}`);
+
+
+//printing only values
+console.log(`Values in marks object are: ${Object.values(marks)}`);
+
+
+console.log("nn");
+console.log("nn");
+
+let keys = Object.keys(marks);
+let values = Object.values(marks);
+
+for (let key of keys) {
+    console.log(key);
+}
+
+for (let value of values) {
+    console.log(value);
+}

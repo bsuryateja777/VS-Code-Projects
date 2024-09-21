@@ -1,0 +1,131 @@
+//foreach------------------------------------------------------------------------------------>
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+function print(n) {
+    console.log(n);
+}
+// numbers.forEach(print);
+
+numbers.forEach(function (n) {
+    // console.log(n);
+})
+
+const movies = [
+    {
+        title: 'bahubali',
+        score: 99
+    },
+    {
+        title: 'magaddera',
+        score: 98
+    },
+    {
+        title: 'salaar',
+        score: 97
+    },
+    {
+        title: 'kalki',
+        score: 100
+    },
+    {
+        title: '50 shades',
+        score: 90
+    }
+];
+
+movies.forEach(function (movie) {
+    // console.log(`${movie.title} -> ${movie.score}/100`);
+})
+
+
+
+//map------------------------------------------------------------------------------->
+
+const names = ['surya', 'sridhar', 'nithin', 'kouhsik', 'sambu'];
+
+const capNames = names.map(function (name) {
+    return name.toUpperCase();
+})
+
+// console.log(capNames);
+
+const titles = movies.map(function (movie) {
+    return movie.title;
+})
+// console.log(titles)
+
+const scores = movies.map(function (movie) {
+    return movie.score;
+})
+// console.log(scores)
+
+//arrow functions
+const arrowadd = (x, y) => {
+    return x + y;
+}
+
+// console.log(arrowadd(2, 3));
+
+const greet = (str) => {
+    return `Hey ${str}!`;
+}
+//can also be written as
+// const greet = (str) => ( `Hey ${str}!`)  without return statement
+
+//arrow functions using map
+const newMovies = movies.map((movie) => {
+    return `${movie.title} -> ${(movie.score) / 10}`;
+})
+// console.log(newMovies)
+
+
+// setTimeout----------------------------------------------------------------->
+// console.log("heyy")
+setTimeout(() => {
+    // console.log("Hellooo....!")
+}, 3000);
+// console.log("goodbye");
+
+
+//setInterval----------------------------------------------------------------->
+const ID = setInterval(() => {
+    // console.log(Math.random());
+}, 2000)
+
+// clearInterval(ID); ///this will stop the interval
+
+//filter ------------------------------------------>
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evens = nums.filter((num) => {
+    return num % 2 === 0;
+})
+
+const odds = nums.filter((num) => {
+    return num % 2 !== 0;
+})
+// console.log(evens);
+// console.log(odds);
+
+//every---------------------------------------------------->
+
+
+const bool = nums.every((num) => {
+    return num >= 0;
+})
+
+const boolean = nums.some((num) => {
+    return num >= 5;
+})
+// console.log(bool)
+// console.log(boolean)
+
+//reduce---------------------------------------->
+
+const ntotal = nums.reduce((acc, cv) => {
+    return acc + cv;
+})
+console.log(ntotal);
+
+//

@@ -1,0 +1,23 @@
+// const API_DATA = "SOMETHING IN STRING";
+// const parsedData = JSON.parse(API_DATA); // to convert into js Object
+// const backToAPI = JSON.stringify(parsedData); //back to string API_DATA
+
+
+
+//real request
+ 
+const req = new XMLHttpRequest();
+
+// runs if req loads
+req.onload = function() {
+    console.log("IT LOADED");
+    console.log(this); // 'this' refers to the XMLHttpRequest instance
+};
+
+req.onerror = function() {
+    console.log("ERRORR!!!!");
+    console.log(this); // 'this' refers to the XMLHttpRequest instance
+};
+
+req.open("GET", "https://swapi.dev/api/people/1/");
+req.send();

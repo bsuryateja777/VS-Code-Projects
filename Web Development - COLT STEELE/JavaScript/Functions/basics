@@ -1,0 +1,112 @@
+function sing() {
+    console.log("do");
+    console.log("re");
+    console.log("me");
+}
+
+// sing();
+
+function greet() {
+    console.log('Hi');
+}
+
+// single parameters
+function greet(Name) {
+    console.log(`Hi, ${Name}`);
+}
+
+// greet();
+
+// greet('surya');
+
+//two parameters
+function greet(firstName, lastName) {
+    console.log(`hello, ${lastName} ${firstName}`);
+}
+
+// greet('surya', 'teja');
+
+//repeat
+function repeat(str, num) {
+    let result = '';
+    for (let i = 0; i < num; i++){
+        result += str+' ';
+        console.log(result);
+    }
+}
+
+// repeat('hi', 3);
+
+//returning a value
+function add(x, y) {
+    let sum = x + y;
+    return sum;
+}
+
+const nameAdd = function (x, y) {
+    return x + y;
+}
+
+function callTwice(func) {
+    func();
+    func();
+}
+
+function random() {
+    console.log("random");
+}
+
+// callTwice(random);
+
+
+function simpleAdd() {
+    let x = 3;
+    let y = 6;
+
+    console.log(add(x,y));
+}
+
+// simpleAdd();
+
+
+//returning a function
+function makeBetweenFunc(min, max) {
+    return function (num) {
+        return num >= min && num <= max;
+    }
+}
+
+const isChild = makeBetweenFunc(0, 18);
+const isAdult = makeBetweenFunc(19, 64);
+const isSenior = makeBetweenFunc(65, 120);
+
+// console.log(isChild(40));
+
+
+//creating objects
+const myMath = {
+
+    PI: 3.14159,
+    square(num) {
+        return num * num;
+    },
+    cube(num) {
+        return num * num * num;
+    }
+
+}
+
+const square = {
+
+    area(side) {
+        return side * side;
+    },
+
+    perimeter(side) {
+        return side * 4;
+    }
+
+}
+
+console.log(myMath.cube(3));
+console.log(square.area(4));
