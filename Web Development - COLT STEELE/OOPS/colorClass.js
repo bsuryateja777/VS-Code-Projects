@@ -31,4 +31,5 @@ class color {
         return `rgba( ${r}, ${g}. ${b}, ${a})`;
     }
 
+
 } 

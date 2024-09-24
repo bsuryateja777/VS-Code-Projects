@@ -1,0 +1,3 @@
+const cats = require('./catDirectory');
+
+console.log("importing a whole directory: ",cats);

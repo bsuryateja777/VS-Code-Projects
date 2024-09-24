@@ -11,6 +11,11 @@ class pet {
 
 
 class cat extends pet{
+
+    constructor(name, age, livesleft = 9) {
+        super(name, age);
+        this.livesleft = livesleft;
+    }
     
     meow() {
         return `MEWOOOOOWWWW`;
@@ -18,7 +23,7 @@ class cat extends pet{
 }
 
 class dog extends pet{
-    
+
     bark() {
         return `BOOWWWW`;
     }
