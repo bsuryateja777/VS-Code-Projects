@@ -1,0 +1,44 @@
+{
+    "soccer": {
+        "name": "Soccer",
+        "subscribers": 800000,
+        "description":"the football subreddit. news, results and discussion",
+        "posts": [
+            {
+                "title": "Maeten de roon to make pizza for more than 1000 people",
+                "author": "joeextreme"
+            },
+            {
+                "title": "Stephen Lichtsteiner has retired from professional",
+                "author": "odd person"
+            },
+            {
+                "title": "official: dani parejo signs for villareal",
+                "author": "joeextreme"
+            }
+        ]
+    },
+     
+    "chickens": {
+        "name": "Chickens",
+        "subscribers": 834565,
+        "description":"A place to post your Photos, video and questions about chickens",
+        "posts": [
+            {
+                "title": "Maeten de roon to make pizza for more than 1000 people",
+                "author": "joeextreme",
+                "img": "https://media.istockphoto.com/id/1742342553/photo/milky-way-stars-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=TLZW-RRI-k36ISaSZUeK5FYxTRB9UKXQ6fDkhFYSso0="
+            },
+            {
+                "title": "Stephen Lichtsteiner has retired from professional",
+                "author": "odd person"
+            },
+            {
+                "title": "official: dani parejo signs for villareal",
+                "author": "joeextreme",
+                "img": "https://images.unsplash.com/photo-1548679847-1d4ff48016c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+            }
+        ]
+        
+    }
+}
